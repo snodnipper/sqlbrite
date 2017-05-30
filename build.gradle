@@ -12,13 +12,14 @@ allprojects {
 }
 
 ext {
-  androidPlugin = 'com.android.tools.build:gradle:2.2.2'
+  androidPlugin = 'com.android.tools.build:gradle:2.3.2'
   compileSdkVersion = 25
-  buildToolsVersion = '25.0.1'
+  buildToolsVersion = '25.0.3'
+  supportLibVersion = '25.3.1'
 
   // Android dependencies.
-  supportV4 = 'com.android.support:support-v4:25.0.1'
-  supportAnnotations = 'com.android.support:support-annotations:25.0.1'
+  supportV4 = 'com.android.support:support-v4:' + supportLibVersion
+  supportAnnotations = 'com.android.support:support-annotations:' + supportLibVersion
   supportTestRunner = 'com.android.support.test:runner:0.5'
 
   // Dagger dependencies.
